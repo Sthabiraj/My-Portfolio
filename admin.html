@@ -2,115 +2,49 @@
 <html>
   <head>
     <title>Admin Panel</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      h1 {
-        margin-top: 20px;
-        text-align: center;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-
-      form {
-        margin-bottom: 20px;
-      }
-
-      label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      select {
-        width: 100%;
-        padding: 10px;
-        border-radius: 3px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        margin-bottom: 10px;
-      }
-
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 3px;
-        cursor: pointer;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      th,
-      td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-
-      th {
-        background-color: #4caf50;
-        color: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="admin.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Admin Panel</h1>
-
-      <form id="userForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="role">Role:</label>
-        <select id="role" name="role" required>
-          <option value="">Select Role</option>
-          <option value="admin">Admin</option>
-          <option value="user">User</option>
-        </select>
-
-        <input type="submit" value="Add User" />
-      </form>
-
-      <table id="userTable">
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Role</th>
-        </tr>
-        <tr>
-          <td>John Doe</td>
-          <td>johndoe@example.com</td>
-          <td>Admin</td>
-        </tr>
-        <tr>
-          <td>Jane Smith</td>
-          <td>janesmith@example.com</td>
-          <td>User</td>
-        </tr>
-      </table>
+      <div class="box">
+        <h1 class="section-title">Admin <span>Panel</span></h1>
+        <form id="userForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="role">Role:</label>
+          <select id="role" name="role" required>
+            <option value="">Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+          </select>
+          <input type="submit" value="Add User" class="button" />
+        </form>
+        <table id="userTable">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>Admin</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+            <td>User</td>
+          </tr>
+        </table>
+      </div>
+      <div class="exit">
+        <a href="index.html">
+          <button class="button">Exit admin pannel</button>
+        </a>
+      </div>
     </div>
-
     <script>
       document
         .getElementById("userForm")

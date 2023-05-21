@@ -527,9 +527,13 @@ p {
 #footer .social-item:hover img {
   filter: grayscale(0);
 }
-#footer p {
+#footer p,
+#footer .admin {
   color: white;
   font-size: 1.3rem;
+}
+.admin {
+  text-decoration: underline;
 }
 /* End of footer section */
 
