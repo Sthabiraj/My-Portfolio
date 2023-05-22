@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/797ead98f1.js"
       crossorigin="anonymous"
@@ -46,11 +48,13 @@
             <h1>Hello,<span></span></h1>
             <h1>My Name Is<span></span></h1>
             <h1>Biraj<span></span></h1>
-            <h2>I'm a <span class="change"></span></h2>
-            <a href="#about" type="button" class="cta">
-              About me
-              <i class="fa-solid fa-circle-arrow-down fa-bounce"></i>
-            </a>
+            <div data-aos="fade-down" data-aos-duration="1000">
+              <h2>I'm a <span class="change"></span></h2>
+              <a href="#about" type="button" class="cta">
+                About me
+                <i class="fa-solid fa-circle-arrow-down fa-bounce"></i>
+              </a>
+            </div>
           </div>
           <div class="img-container">
             <div class="img-box">
@@ -68,7 +72,7 @@
         <div class="skills-header">
           <h1 class="section-title">Skills <span>&</span> Abilities</h1>
         </div>
-        <div class="all-skills">
+        <div class="all-skills" data-aos="fade-down" data-aos-duration="1000">
           <div class="skill-item">
             <img
               src="https://img.icons8.com/?size=512&id=shQTXiDQiQVR&format=png"
@@ -183,30 +187,38 @@
           </p>
         </div>
         <div class="all-education">
-          <div class="education-item">
-            <div class="education-img">
-              <img
-                src="https://heraldcollege.edu.np/images/infrastructure/block-one.jpg"
-                alt="College image"
-              />
-            </div>
-            <div class="education-info">
-              <h1>BSc. (Hons) in Computer Science</h1>
-              <p>Herald College Kathmandu | WLV</p>
-              <h2>2023-2025 | Pursuing</h2>
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <div class="education-item">
+              <div class="education-img">
+                <img
+                  src="https://heraldcollege.edu.np/images/infrastructure/block-one.jpg"
+                  alt="College image"
+                />
+              </div>
+              <div class="education-info">
+                <h1>BSc. (Hons) in Computer Science</h1>
+                <p>Herald College Kathmandu | WLV</p>
+                <h2>2023-2025 | Pursuing</h2>
+              </div>
             </div>
           </div>
-          <div class="education-item">
-            <div class="education-img">
-              <img
-                src="https://nepalicontacts.com/wp-content/uploads/2019/07/St.-Lawrence-College-fi.jpg"
-                alt="College image"
-              />
-            </div>
-            <div class="education-info">
-              <h1>+2 Science</h1>
-              <p>St. Lawrence College | NEB</p>
-              <h2>2020-2022 | Completed</h2>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="education-item">
+              <div class="education-img">
+                <img
+                  src="https://nepalicontacts.com/wp-content/uploads/2019/07/St.-Lawrence-College-fi.jpg"
+                  alt="College image"
+                />
+              </div>
+              <div class="education-info">
+                <h1>+2 Science</h1>
+                <p>St. Lawrence College | NEB</p>
+                <h2>2020-2022 | Completed</h2>
+              </div>
             </div>
           </div>
         </div>
@@ -224,14 +236,28 @@
         </div>
         <div class="col-right">
           <h1 class="section-title">About <span>Me</span></h1>
-          <h2>Frontend Developer</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            inventore mollitia, maiores quasi in nostrum aliquid sint quos
-            dolorem, minus, sunt recusandae dolor voluptas quisquam commodi at
-            optio sed autem.
-          </p>
-          <a href="#" class="cta">Download Resume</a>
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <h2>Frontend Developer</h2>
+          </div>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              inventore mollitia, maiores quasi in nostrum aliquid sint quos
+              dolorem, minus, sunt recusandae dolor voluptas quisquam commodi at
+              optio sed autem.
+            </p>
+          </div>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <a href="#" class="cta">Download Resume</a>
+          </div>
         </div>
       </div>
     </section>
@@ -243,7 +269,11 @@
         <div>
           <h1 class="section-title">Contact <span>info</span></h1>
         </div>
-        <div class="contact-items">
+        <div
+          class="contact-items"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div class="contact-item">
             <div class="icon">
               <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
@@ -328,6 +358,9 @@
       </div>
     </section>
     <!-- End of Footer Section -->
+    <script>
+      AOS.init();
+    </script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
