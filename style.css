@@ -309,7 +309,7 @@ p {
 #skills .skills {
   flex-direction: column;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 100px 0;
 }
