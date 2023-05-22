@@ -334,7 +334,7 @@ p {
   cursor: pointer;
   transition: 0.3s ease;
   transition-property: background-color, box-shadow;
-  max-width: 110px;
+  max-width: 120px;
   flex: 1;
 }
 #skills .skill-item:hover {
@@ -342,7 +342,6 @@ p {
   box-shadow: 0 8px 8px -3px rgba(0, 0, 0, 0.3);
 }
 #skills .skill-item h1 {
-  /* color: white; */
   font-weight: 500;
 }
 #skills .skill-item img {
