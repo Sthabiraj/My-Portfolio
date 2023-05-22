@@ -318,28 +318,31 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 25px 15px;
-  background-color: rgba(41, 50, 60, 0.5);
-  /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+  box-shadow: 0px 0px 18px 0 #0000002c;
   padding: 20px;
   width: 85%;
   border-radius: 10px;
+  background-color: rgba(241, 241, 241, 0.2);
 }
 #skills .skill-item {
-  background-color: rgba(72, 85, 99, 1);
+  background-color: white;
+  box-shadow: 0px 0px 9px 0 #0000002c;
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
   transition: 0.3s ease;
   transition-property: background-color, box-shadow;
-  width: 150px;
+  max-width: 110px;
+  flex: 1;
 }
 #skills .skill-item:hover {
-  background-color: rgb(65, 76, 88);
+  background-color: rgba(65, 76, 88, 0.05);
   box-shadow: 0 8px 8px -3px rgba(0, 0, 0, 0.3);
 }
 #skills .skill-item h1 {
-  color: white;
+  /* color: white; */
   font-weight: 500;
 }
 #skills .skill-item img {
@@ -363,7 +366,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 20px;
+  gap: 40px;
 }
 #education .all-education .education-item {
   border-radius: 10px;
