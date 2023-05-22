@@ -334,7 +334,7 @@ p {
   cursor: pointer;
   transition: 0.3s ease;
   transition-property: background-color, box-shadow;
-  max-width: 120px;
+  /* max-width: 120px; */
   flex: 1;
 }
 #skills .skill-item:hover {
